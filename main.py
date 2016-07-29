@@ -40,7 +40,6 @@ def check_hit():
 
 def extend_hit_assignments(exp_inc):
     mtc.extend_hit(hit_id=HIT_ID, expiration_increment=exp_inc)
-    hit = mtc.get_hit(HIT_ID)[0]
 
 # testing extend_hit_assignments
 hit = mtc.get_hit(HIT_ID)[0]
