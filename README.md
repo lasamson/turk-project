@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-# ${1:Project Name}
+# $turk-project
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python script that implements a cost optimization function for crowdsourced work platforms such as Amazon MTurk
 ## Installation
 * Install Python 3 from [here](https://www.python.org/downloads/) if you don't already have it installed
