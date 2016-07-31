@@ -1,7 +1,7 @@
 <snippet>
   <content>
 # turk-project
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python script that implements a cost optimization function for crowdsourced work platforms such as Amazon MTurk
+Python script that implements a cost optimization function for crowdsourced work platforms such as Amazon MTurk
 ## Installation
 * Install Python 3 from [here](https://www.python.org/downloads/) if you don't already have it installed
 * Install the Boto SDK for MTurk by typing `pip install boto` at the command prompt
