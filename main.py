@@ -45,15 +45,7 @@ def extend_hit_assignments(exp_inc):
 hit = mtc.get_hit(HIT_ID)[0]
 print(hit.AssignmentDurationInSeconds)
 extend_hit_assignments(3600)
+hit = mtc.get_hit(HIT_ID)[0]
 print(hit.AssignmentDurationInSeconds)
 
-# hit = mtc.get_hit(HIT_ID)
-# new_hit_type = mtc.register_hit_type(title=hit[0].Title, description=hit[0].Description, reward=hit[0].Reward, duration=3600)
-# print(new_hit_type)
-# mtc.change_hit_type_of_hit(HIT_ID, new_hit_type[0])
 
-# mtc.change_hit_type_of_hit(HIT_ID, new_hit_type)
-# print(mtc.get_hit(HIT_ID)[0].Description)
-
-# print(mtc.get_hit(HIT_ID)[0].Title)
-# print(mtc.get_assignments(HIT_ID).NumResults)

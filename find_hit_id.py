@@ -6,7 +6,6 @@ from boto.mturk.question import QuestionContent,Question,QuestionForm,Overview,A
 ACCESS_KEY_ID = ''
 SECRET_ACCESS_KEY = ''
 HOST = 'mechanicalturk.sandbox.amazonaws.com'
-HIT_ID = ''
 
 # establish a connection with MTurk API using Boto SDK
 mtc = MTurkConnection(aws_access_key_id=ACCESS_KEY_ID,
@@ -14,17 +13,6 @@ mtc = MTurkConnection(aws_access_key_id=ACCESS_KEY_ID,
                       host=HOST)
 
 # list all of the user's HITs by their title and id
-# hits = mtc.search_hits()
-# for hit in hits:
-#     print(hit.Title + ": " + hit.HITId)
-
-hit = mtc.get_hit(HIT_ID)
-print(hit[0].AssignmentDurationInSeconds)
-
-    # mtc.extend_hit(hit_id=hit.HITId, expiration_increment=3600)
-    # mtc.set_sqs_notification(hit.HITTypeId, 'https://sqs.us-west-2.amazonaws.com/846491338745/mturk_queue', event_types=['AssignmentSubmitted'])
-# collection = DOMTree.documentElement
-#
-# HIT = collection.getElementsByTagName("HIT")[0]
-# HITId = HIT.getElementsByTagName("HITId")
-# print(HITId)
+hits = mtc.search_hits()
+for hit in hits:
+    print(hit.Title + ": " + hit.HITId)
