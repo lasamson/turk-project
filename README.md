@@ -9,5 +9,4 @@ Python script that implements a cost optimization function for crowdsourced work
 * Run find_hit_id.py first in order to list all of the HITs along with their IDs by typing `python find_hit_id.py` at the command prompt
 * Copy and paste one of the HIT IDs into the appropriate variable in main.py and run main.py by typing `python main.py` at the command prompt
 </content>
-  <tabTrigger>readme</tabTrigger>
 </snippet>
